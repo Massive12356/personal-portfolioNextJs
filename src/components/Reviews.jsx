@@ -6,49 +6,63 @@ import { useRef, useState, useEffect } from "react"
 import { animate, motion } from "framer-motion"
 
 const Reviews = () => {
-  const [index, setIndex] = useState(0)
-  const [direction, setDirection] = useState(false)
-  const prevIndex = useRef(0)
-  const slides = useRef([])
+  const [index, setIndex] = useState(0);
+  const [direction, setDirection] = useState(false);
+  const prevIndex = useRef(0);
+  const slides = useRef([]);
 
   const rightClickHandler = () => {
-    animate(slides.current[index], { x: 0, scale: 1, rotate: 0 }, { delay: 0.3 })
+    animate(
+      slides.current[index],
+      { x: 0, scale: 1, rotate: 0 },
+      { delay: 0.3 }
+    );
     animate(slides.current[prevIndex.current], {
       scale: 0.4,
       rotate: index % 2 === 0 ? 10 : -10,
-      x: '-100%',
-    })
-  }
+      x: "-100%",
+    });
+  };
 
   const leftClickHandler = () => {
-    animate(slides.current[index], { x: 0, scale: 1, rotate: 0 }, { delay: 0.3 })
+    animate(
+      slides.current[index],
+      { x: 0, scale: 1, rotate: 0 },
+      { delay: 0.3 }
+    );
     animate(slides.current[prevIndex.current], {
-      x: '100%',
+      x: "100%",
       scale: 0.4,
       rotate: prevIndex.current % 2 === 0 ? 10 : -10,
-    })
-  }
+    });
+  };
 
   useEffect(() => {
     if (slides.current[index]) {
-      direction ? leftClickHandler() : rightClickHandler()
-      prevIndex.current = index
+      direction ? leftClickHandler() : rightClickHandler();
+      prevIndex.current = index;
     }
-  }, [index])
+  }, [index]);
+  // ✅ NEW: Animate the first slide on component mount
+  useEffect(() => {
+    if (slides.current[0]) {
+      animate(slides.current[0], { x: 0, scale: 1, rotate: 0 });
+    }
+  }, []);
 
   const handlePrevClick = () => {
-    setDirection(true)
-    setIndex((prev) => (prev - 1 + reviewsData.length) % reviewsData.length)
-  }
+    setDirection(true);
+    setIndex((prev) => (prev - 1 + reviewsData.length) % reviewsData.length);
+  };
 
   const handleNextClick = () => {
-    setDirection(false)
-    setIndex((prev) => (prev + 1) % reviewsData.length)
-  }
+    setDirection(false);
+    setIndex((prev) => (prev + 1) % reviewsData.length);
+  };
 
   return (
     <div id="reviews" className="my-20">
-      <Heading text={'Reviews'} />
+      <Heading text={"Reviews"} />
       <div className="flex flex-col items-center justify-center">
         <motion.div
           initial={{ opacity: 0, x: -200 }}
@@ -59,7 +73,7 @@ const Reviews = () => {
         >
           {reviewsData.map((review, i) => (
             <motion.div
-              initial={{ x: i === 0 ? 0 : '100%' }} // First slide visible by default
+              initial={{ x: i === 0 ? 0 : "100%" }} // First slide visible by default
               key={i}
               className="absolute inset-0 flex flex-col items-center justify-center gap-y-7 lg:gap-y-4 border border-yellow-500 bg-zinc-100 p-14 lg:p-5 rounded-xl dark:bg-zinc-700 transition-colors"
               ref={(el) => (slides.current[i] = el)}
@@ -71,7 +85,9 @@ const Reviews = () => {
                 height={130}
                 className="w-[130px] aspect-square rounded-full border border-yellow-500 p-4 object-contain"
               />
-              <h1 className="text-2xl md:text-xl text-center tracking-wider text-yellow-600">{review.name}</h1>
+              <h1 className="text-2xl md:text-xl text-center tracking-wider text-yellow-600">
+                {review.name}
+              </h1>
               <p className="text-lg md:text-sm text-justify font-extralight tracking-wide text-gray-600 first-letter:pl-2 dark:text-white transition-colors">
                 {review.comment}
               </p>
@@ -81,7 +97,9 @@ const Reviews = () => {
                 </span>
                 <div className="flex items-center gap-x-2 text-2xl text-yellow-500">
                   {review.stars.map((star, i) => (
-                    <span key={i}>{star === 1 ? starIcons[0] : starIcons[1]}</span>
+                    <span key={i}>
+                      {star === 1 ? starIcons[0] : starIcons[1]}
+                    </span>
                   ))}
                 </div>
               </div>
@@ -94,7 +112,7 @@ const Reviews = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Reviews
