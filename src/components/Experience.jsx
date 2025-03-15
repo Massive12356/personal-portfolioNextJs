@@ -22,7 +22,7 @@ const Experience = () => {
         alt={"Experience"}
         width={400}
         height={400}
-        className="absolute -top-4 right-4 opacity-70 lg:hidden"
+        className="absolute top-10 -right-5 opacity-70 lg:hidden w-[40%]"
       />
 
       <div ref={containerRef} className="relative flex flex-col items-center justify-center gap-y-10 lg:gap-y-20 py-10 w-full">
@@ -37,7 +37,7 @@ const Experience = () => {
             }`}
           >
             {/* Experience Card */}
-            <motion.div initial={{opacity: 0, x: i % 2 === 0 ? -80 : 80}} whileInView={ {opacity:1, x: 0 }} viewport={{once : true}} transition={{duration: .7, type: 'spring', stiffness: 50 }} className="relative flex flex-col gap-y-3 rounded-md border border-red-300 bg-white p-6 tracking-wide w-[45%] shadow-lg cursor-pointer hover:bg-red-200 dark:bg-zinc-700 transition-colors z-20">
+            <motion.div initial={{opacity: 0, x: i % 2 === 0 ? -80 : 80}} whileInView={ {opacity:1, x: 0 }} viewport={{once : true}} transition={{duration: .7, type: 'spring', stiffness: 50 }} className="relative flex flex-col gap-y-3 rounded-md border border-red-300 bg-white p-6 md:p-3 tracking-wide w-[45%] sm:w-[100%] md:w-[120%] shadow-lg cursor-pointer hover:bg-red-200 dark:bg-zinc-700 transition-colors z-20">
               <h1 className="text-xl sm:text-lg font-light text-gray-700 dark:text-white">{data.title}</h1>
               <p className="text-gray-800 dark:text-gray-200 transition-colors">
                 <span className="block font-light">Education:</span>
@@ -62,7 +62,7 @@ const Experience = () => {
             {/* Year Indicator */}
             <div className={`w-16 h-16 absolute top-20  ${i % 2 === 0 ? "left-[51%]" : "left-[43%]"}
               border border-gray-300 rounded-full flex items-center justify-center 
-               text-red-400 font-light bg-white shadow-md`}>
+               text-red-400 font-light bg-white shadow-md md:hidden sm:hidden`}>
                         {data.year}
              </div>
 

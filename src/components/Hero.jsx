@@ -40,14 +40,14 @@ const rotateX = useTransform(ySpring, [0, innerHeight], [10, -50]);
             <motion.span className="absolute text-3xl font-semibold text-white" initial={{scale:0}} animate={{opacity: buttonHover ? 0 : 1, scale: buttonHover ? 2 : 0, y: buttonHover ? -40 : 0,}} transition={{opacity: {delay: 0.4}}}> Hi </motion.span>
           </motion.div>
           <h1 className="text-center text-3xl font-bold tracking-wider text-gray-500 sm:2xl dark:text-white transition-colors">My Name is Edward Mintah</h1>
-          <p className="text-lg tracking-wider text-gray-700 sm:text-sm sm:text-center dark:text-gray-200 transition-colors">I create responsive websites with appealing designs and a focus on exceptional user experience.👍</p>
+          <p className="text-lg tracking-wider text-gray-700 sm:text-sm sm:text-center dark:text-gray-200 transition-colors text-center ">I create responsive websites with appealing designs and a focus on exceptional user experience.👍</p>
         </motion.div>
         <motion.div initial={{opacity:0, y:100}} animate={{opacity:1, y:0}} transition={{delay: .5}} className="mt-8 flex justify-center  gap-x-10 text-3xl text-yellow-600 sm:text-2xl">
           {heroIcons.map((icon, i) => (
             <a href="#" key={i} className="rounded-lg hover:bg-red-400 hover:text-white transition-colors">{icon}</a>
           ))}
         </motion.div>
-        <motion.a initial={{opacity:0, x: -30}} animate={{opacity:1, x:0}} transition={{delay: .7}} href="#" className=" mx-auto mt-7 block w-max rounded-lg bg-red-400 px-3 py-1 font-light capitalize tracking-wider text-white hover:bg-red-500 transition-colors" onMouseEnter={() => setButtonHover(true)} onMouseLeave={() => setButtonHover(false)}>Talk to me </motion.a>
+        <motion.a initial={{opacity:0, x: -30}} animate={{opacity:1, x:0}} transition={{delay: .7}} href="#contact" className=" mx-auto mt-7 block w-max rounded-lg bg-red-400 px-3 py-1 font-light capitalize tracking-wider text-white hover:bg-red-500 transition-colors" onMouseEnter={() => setButtonHover(true)} onMouseLeave={() => setButtonHover(false)}>Talk to me </motion.a>
       </div>
     </div>
   )

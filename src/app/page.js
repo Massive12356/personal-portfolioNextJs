@@ -5,7 +5,7 @@ import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import Reviews from "@/components/Reviews";
 import Projects from "@/components/Projects";
-import PricingPlans from "@/components/PricingPlans";
+// import PricingPlans from "@/components/PricingPlans";
 import Contact from "@/components/Contact";
 import Navbar from "@/components/Navbar";
 import Toggle from "@/components/sub/Toggle";
@@ -40,7 +40,7 @@ export default function Home() {
       <Skills/>
       <Reviews />
       <Projects/>
-      <PricingPlans />
+      {/* <PricingPlans /> */}
       <Contact />
     </div>
     </Toggle>

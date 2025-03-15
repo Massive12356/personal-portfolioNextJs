@@ -22,7 +22,7 @@ import AwardFillIcon from 'remixicon-react/AwardFillIcon'
 export const aboutData = [
   {
     title: 'Github Repos',
-    amount: 348,
+    amount: 22,
     icon: <GithubFillIcon />,
   },
   {
@@ -32,12 +32,12 @@ export const aboutData = [
   },
   {
     title: 'Satisfied clients',
-    amount: 176,
+    amount: 2,
     icon: <GroupLineIcon />,
   },
   {
     title: 'Awards and Recognition',
-    amount: 107,
+    amount: 3,
     icon: <AwardFillIcon />,
   },
 ]
@@ -49,23 +49,23 @@ export const downloadIcon = <DownloadLineIcon />
 export const arrowLeftIcon = <ArrowLeftSFillIcon />
 
 export const aboutText =
-  " Hi, I'm Nick, a web developer & designer. I blend the technical  skills of web development with the creative aspects of web design. I code in HTML, CSS, JavaScript, React, NextJS... to build functional and responsive websites, while also using design tools like Photoshop and Figma to create visually appealing and user-friendly  interfaces. My role allows me to ensure that websites not only work well but also look great and provide an excellent user experience."
+  " Hi, I'm Edward, a Junior Frontend Developer... I specialize in building responsive and user-friendly websites using HTML, CSS, JavaScript, and React. I combine strong technical skills with soft skills like teamwork, communication, and problem-solving to create functional and visually appealing interfaces. My focus is on delivering seamless performance and an exceptional user experience."
 // End of AboutMe icons
 
 // Skills
 export const skillsData = [
-  {
-    name: 'Figma',
-    icon: '/skills/figma.png',
-  },
-  {
-    name: 'Photoshop',
-    icon: '/skills/photoshop.png',
-  },
-  {
-    name: 'Blender',
-    icon: '/skills/blender.png',
-  },
+  // {
+  //   name: 'Figma',
+  //   icon: '/skills/figma.png',
+  // },
+  // {
+  //   name: 'Photoshop',
+  //   icon: '/skills/photoshop.png',
+  // },
+  // {
+  //   name: 'Blender',
+  //   icon: '/skills/blender.png',
+  // },
   {
     name: 'VS Code',
     icon: '/skills/vscode.png',
@@ -94,34 +94,34 @@ export const skillsData = [
     name: 'ReactJS',
     icon: '/skills/react.png',
   },
-  {
-    name: 'TypeScript',
-    icon: '/skills/ts.png',
-  },
-  {
-    name: 'AI',
-    icon: '/skills/ai.png',
-  },
+  // {
+  //   name: 'TypeScript',
+  //   icon: '/skills/ts.png',
+  // },
+  // {
+  //   name: 'AI',
+  //   icon: '/skills/ai.png',
+  // },
   {
     name: 'Framer Motion',
     icon: '/skills/framer.png',
   },
-  {
-    name: 'ThreeJS',
-    icon: '/skills/threejs.png',
-  },
-  {
-    name: 'NextJS',
-    icon: '/skills/nextjs.png',
-  },
-  {
-    name: 'NodeJS',
-    icon: '/skills/nodejs.png',
-  },
-  {
-    name: 'MongoDB',
-    icon: '/skills/mongodb.png',
-  },
+  // {
+  //   name: 'ThreeJS',
+  //   icon: '/skills/threejs.png',
+  // },
+  // {
+  //   name: 'NextJS',
+  //   icon: '/skills/nextjs.png',
+  // },
+  // {
+  //   name: 'NodeJS',
+  //   icon: '/skills/nodejs.png',
+  // },
+  // {
+  //   name: 'MongoDB',
+  //   icon: '/skills/mongodb.png',
+  // },
   {
     name: 'Github',
     icon: '/skills/github.png',
@@ -132,58 +132,57 @@ export const skillsData = [
 import CopyrightLineIcon from 'remixicon-react/CopyrightLineIcon'
 
 // export const copyRightIcon = <PiCopyrightThin />
-export const copyRightIcon = <CopyrightLineIcon />
+export const copyRightIcon = <CopyrightLineIcon  />
 // Experience
 export const experienceData = [
   {
-    year: 1,
-    title: 'Foundation and Basics',
+    year: 2019,
+    title: "Advanced Learning and Early Experience",
     education:
-      'High School Diploma: Focus on computer science, mathematics, and art/design courses.',
+      "Higher National Diploma: Focus on computer science, mathematics, and creative Thinking Courses.",
     experience: [
-      'Basic HTML/CSS: Learn through online tutorials and courses.',
-      'Personal Projects: Create simple personal websites or blogs.',
+      "Basic HTML , CSS,JAVASCRIPT, C++, JAVA and REACT",
+      "Personal Projects: Created A hostel navigation system using html Css javaScript.",
     ],
   },
   {
-    year: 2,
-    title: 'Advanced Learning and Early Experience',
+    year: 2020,
+    title: "Internship at GITPLUS",
     education:
-      'Associate’s Degree in Web Development or Design: Enroll in a 2-year program covering web development and design principles.',
+      "Internship Training: Enrolled in an internship program at GITPLUS.",
     experience: [
-      'Freelance Work: Take on small freelance projects to build a portfolio.',
-      'Online Courses and Certifications: Learn JavaScript, responsive design, and UX/UI design.',
+      "Developed an online response system using HTML, CSS, and JavaScript to collect client feedback and gained experience in creating detailed system requirement specifications.",
     ],
   },
   {
-    year: 3,
-    title: 'Specialized Education and Real-World Application',
+    year: 2021,
+    title: "Internship at LobsterPlus Ghana Limited",
     education:
-      'Online Courses and Bootcamps: Focus on specialized areas like front-end frameworks (React, Angular) and back-end technologies (Node.js).',
+      "Internship Training: Focus on specialized areas like  computer Networking and windows server Management",
     experience: [
-      'Internships: Secure internships with tech companies or design agencies.',
-      'Contribute to Open Source: Collaborate on open-source projects.',
+      "Worked with professional network technicians to build a network infrastructure for the LobsterPlus organization, improving overall productivity.",
     ],
   },
   {
-    year: 4,
-    title: 'Building Expertise and Expanding Skills',
-    education: 'Certifications: Obtain certifications in advanced web technologies.',
+    year: 2022,
+    title: "National Service at Ghana Broadcasting Corporation",
+    education:
+      "Acquired advanced expertise in web development tools, including HTML, CSS, and React, along with proficiency in computer networking and Windows Server management.",
     experience: [
-      'Full-Time Position: Work as a junior web developer or designer.',
-      'Portfolio Development: Continuously update your portfolio with professional and personal projects.',
+      "Contributed to developing a staff performance monitoring system, focusing on responsive design with HTML, CSS, and JavaScript.",
+      "Led a team in restructuring the network infrastructure at the GBC IT Support Office.",
     ],
   },
   {
-    year: 5,
-    title: 'Mastery and Leadership',
-    education: 'Workshops and Conferences: Attend industry events to stay updated.',
+    year: 2025,
+    title: "GROW WEB DEVELOPMENT PROGRAM AT MEST AFRICA",
+    education:
+      "Learned best practices in HTML, CSS, JavaScript, and React, along with deployment using Vercel and Netlify, and version control with GitHub and GitLab.",
     experience: [
-      'Senior Position: Aim for a senior web developer or lead designer role, mentoring junior colleagues.',
-      'Freelance and Consulting: Consider starting a freelance business or consulting practice.',
+      "Part of a team that developed a responsive library management system using React.js and Tailwind CSS.",
     ],
   },
-]
+];
 
 export const projectsData = [
   {
@@ -250,16 +249,16 @@ export const projectsData = [
 
 export const projectsButton = [
   'All',
-  'Figma',
-  'Photoshop',
+  // 'Figma',
+  // 'Photoshop',
   'HTML',
   'CSS',
   'JavaScript',
   'ReactJS',
   'TailwindCSS',
-  'NextJS',
+  // 'NextJS',
   'FramerMotion',
-  'ThreeJS',
+  // 'ThreeJS',
 ]
 
 import Home5LineIcon from 'remixicon-react/Home5LineIcon'
@@ -303,21 +302,21 @@ export const navbarData = [
     name: 'Projects',
     icon: <ProjectorLineIcon />,
   },
-  {
-    id: 'pricing',
-    name: 'Pricing',
-    icon: <PriceTag3LineIcon />,
-  },
+  // {
+  //   id: 'pricing',
+  //   name: 'Pricing',
+  //   icon: <PriceTag3LineIcon />,
+  // },
   {
     id: 'contact',
     name: 'Contact',
     icon: <ContactsBook2LineIcon />,
   },
-  {
-    id: 'questions',
-    name: 'Questions',
-    icon: <QuestionAnswerLineIcon />,
-  },
+  // {
+  //   id: 'questions',
+  //   name: 'Questions',
+  //   icon: <QuestionAnswerLineIcon />,
+  // },
 ]
 
 export const questions = [
@@ -392,42 +391,42 @@ export const starIcons = [<StarFillIcon />, <StarHalfLineIcon />]
 export const arrowIcons = [<ArrowLeftSLineIcon />, <ArrowRightSLineIcon />]
 
 export const reviewsData = [
+  // {
+  //   image: '/reviews/client-4.png',
+  //   name: 'Mark T., Freelance Graphic Designer',
+  //   comment:
+  //     "Your work on our website has been phenomenal. The design is visually stunning and incredibly user-friendly. We've received countless compliments from our customers, and our sales have noticeably increased. Thank you for capturing our brand's essence so perfectly!",
+  //   stars: [1, 1, 1, 1, 0.5],
+  // },
+  // {
+  //   image: '/reviews/client-2.png',
+  //   name: 'Sarah B., E-commerce Store Owner',
+  //   comment:
+  //     "Working with you, has been an absolute pleasure. The portfolio website you created for me is sleek, modern, and beautifully showcases my work. Your attention to detail and creative flair are truly impressive. I couldn't be happier with the final result!",
+  //   stars: [1, 1, 1, 1, 1],
+  // },
+  // {
+  //   image: '/reviews/client-3.png',
+  //   name: 'Emily R., CEO of Tech Startup',
+  //   comment:
+  //     "The redesign of our corporate website exceeded all expectations. Your innovative ideas and professional execution have given us a site that is not only visually appealing but also highly functional. We've seen a significant improvement in user engagement thanks to your expertise.",
+  //   stars: [1, 1, 1, 1, 1],
+  // },
   {
-    image: '/reviews/client-4.png',
-    name: 'Mark T., Freelance Graphic Designer',
+    image: "/reviews/client-1.png",
+    name: "Dennis Obeng, CEO of LobsterPlus Ghana",
     comment:
-      "Your work on our website has been phenomenal. The design is visually stunning and incredibly user-friendly. We've received countless compliments from our customers, and our sales have noticeably increased. Thank you for capturing our brand's essence so perfectly!",
+      "The e-commerce website you built for me has significantly improved my business. I truly appreciate the professionalism you demonstrated and the exceptional design touch you brought to the project.",
     stars: [1, 1, 1, 1, 0.5],
   },
   {
-    image: '/reviews/client-2.png',
-    name: 'Sarah B., E-commerce Store Owner',
+    image: "/reviews/client-3.png",
+    name: "Dorothy Offei, Senior Manager at  Ghana Broadcasting corporation (GBC)",
     comment:
-      "Working with you, has been an absolute pleasure. The portfolio website you created for me is sleek, modern, and beautifully showcases my work. Your attention to detail and creative flair are truly impressive. I couldn't be happier with the final result!",
+      "The staff management application you built during your national service has significantly improved our workflow in the office, eliminating the need for paperwork and making our operations more efficient",
     stars: [1, 1, 1, 1, 1],
   },
-  {
-    image: '/reviews/client-3.png',
-    name: 'Emily R., CEO of Tech Startup',
-    comment:
-      "The redesign of our corporate website exceeded all expectations. Your innovative ideas and professional execution have given us a site that is not only visually appealing but also highly functional. We've seen a significant improvement in user engagement thanks to your expertise.",
-    stars: [1, 1, 1, 1, 1],
-  },
-  {
-    image: '/reviews/client-1.png',
-    name: 'Bob W., Lifestyle Blogger',
-    comment:
-      "I absolutely love the blog design you created for me, [Web Designer's Name]. It's exactly what I envisioned—stylish, unique, and easy to navigate. Your responsiveness and creative input were invaluable. My readers are raving about the new look, and I couldn't be more thrilled!",
-    stars: [1, 1, 1, 1, 0.5],
-  },
-  {
-    image: '/reviews/client-5.png',
-    name: 'David H., Director of Non-Profit Organization',
-    comment:
-      "your work on our non-profit’s website has been transformative. The design is clean, engaging, and effectively conveys our mission. We've seen an increase in online donations and volunteer sign-ups, all thanks to your fantastic design. Your dedication and talent are greatly appreciated!",
-    stars: [1, 1, 1, 1, 1],
-  },
-]
+];
 
 export const pricingPlans = [
   {

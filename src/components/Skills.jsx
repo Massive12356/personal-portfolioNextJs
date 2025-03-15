@@ -24,7 +24,7 @@ const Skills = () => {
     <div id="skills" className="min-h-screen flex flex-col items-center justify-center gap-y-20">
         <Heading text={"Skills"}/>
 
-        <div className="w-[200%] flex justify-between flex-wrap gap-x-8 gap-y-10 lg:gap-y-6">
+        <div className="w-[100%] flex justify-between flex-wrap gap-x-8 md:gap-x-2 gap-y-10 lg:gap-y-6">
             {skillsData.map((item,i)=>(
                 <motion.div  custom={i} variants={variance} initial='hidden' whileInView='visible' whileHover={{scale: 1.1}} key={i} className="flex items-center justify-center gap-x-3 rounded-xl border border-yellow-500 bg-zinc-200 px-5 py-5 lg:px-2 cursor-pointer" >
                 <Image src={item.icon} alt="skills image" width={100} height={100} className="h-auto w-[40px]"/>
