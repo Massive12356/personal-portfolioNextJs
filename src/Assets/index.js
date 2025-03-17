@@ -27,7 +27,7 @@ export const aboutData = [
   },
   {
     title: 'Successful Projects',
-    amount: 227,
+    amount: 4,
     icon: <Projector2LineIcon />,
   },
   {
@@ -93,6 +93,10 @@ export const skillsData = [
   {
     name: 'ReactJS',
     icon: '/skills/react.png',
+  },
+  {
+    name: 'Git',
+    icon: '/skills/Git-Icon.png',
   },
   // {
   //   name: 'TypeScript',
@@ -186,66 +190,76 @@ export const experienceData = [
 
 export const projectsData = [
   {
-    name: 'SparkleGrove.com',
-    desc: 'A lifestyle blog featuring DIY crafts, home decor ideas, and inspiration for creating a cozy and stylish living space.',
-    url: '/projects/image-1.jpg',
-    tech: ['Figma', 'Photoshop', 'HTML'],
+    name: "PortFolio Website",
+    desc: "A Portfolio Website that showcases my skills and experience.",
+    url: "/projects/MASSIVE.png",
+    tech: ["CSS", "JavaScript", "HTML"],
+    link: "https://edwardmintah.netlify.app/",
   },
   {
-    name: 'TechTrekker.net',
-    desc: 'A technology news and review site covering the latest gadgets, software updates, and trends in the tech industry.',
-    url: '/projects/image-2.jpg',
-    tech: ['Figma', 'Photoshop'],
+    name: "Mental Wellness Website",
+    desc: "A website created to help people with mental health issues.",
+    url: "/projects/mental Health.png",
+    tech: ["ReactJS", "TailwindCSS", "FramerMotion"],
+    link: "https://mental-health-theta-dun.vercel.app/",
   },
   {
-    name: 'CozyNestHomes.org',
-    desc: 'A resource for homeowners and renters alike, offering tips on interior design, home improvement projects, and sustainable living practices.',
-    url: '/projects/image-3.jpg',
-    tech: ['HTML', 'CSS', 'JavaScript'],
+    name: "Construction Company website",
+    desc: "A website created for a construction company.",
+    url: "/projects/cons.png",
+    tech: ["ReactJS", "TailwindCSS", "FramerMotion"],
+    link: "https://construction-app-nine.vercel.app/",
   },
   {
-    name: 'WanderLuxeTravels.co',
-    desc: 'A travel website that provides luxury travel guides, destination reviews, and tips for planning unforgettable vacations.',
-    url: '/projects/image-4.jpg',
-    tech: ['HTML', 'CSS', 'JavaScript', 'TailwindCSS'],
+    name: "Real estate App",
+    desc: "A real estate app that allows users to search for properties.",
+    url: "/projects/estate.png",
+    tech: ["ReactJS", "TailwindCSS", "FramerMotion"],
+    link: "https://estateproject-navy.vercel.app/",
   },
-  {
-    name: 'ByteBoosters.io',
-    desc: 'A tech startup specializing in software development, offering innovative solutions and services for businesses looking to enhance their digital presence.',
-    url: '/projects/image-5.jpg',
-    tech: ['Figma', 'ReactJS', 'TailwindCSS', 'CSS'],
-  },
-  {
-    name: 'GreenLeafGardens.biz',
-    desc: 'An online store and community hub for gardening enthusiasts, featuring a wide range of plants, gardening tools, and expert advice.',
-    url: '/projects/image-6.jpg',
-    tech: ['ReactJS', 'TailwindCSS', , 'CSS', 'FramerMotion'],
-  },
-  {
-    name: 'PixelPerfectDesigns.info',
-    desc: 'A graphic design portfolio showcasing the work of a freelance designer, including branding, web design, and illustration projects.',
-    url: '/projects/image-7.jpg',
-    tech: ['NextJS', 'FramerMotion'],
-  },
-  {
-    name: 'HarmonyHealthHub.com',
-    desc: ' A wellness website focused on holistic health, offering articles on nutrition, fitness, mental health, and alternative therapies.',
-    url: '/projects/image-8.jpg',
-    tech: ['NextJS', 'ReactJS', 'FramerMotion'],
-  },
-  {
-    name: 'StellarSkiesAstronomy.org',
-    desc: 'An educational site dedicated to astronomy, providing resources for amateur astronomers, star maps, and information on celestial events.',
-    url: '/projects/image-9.jpg',
-    tech: ['ReactJS', 'JavaScript', 'ThreeJS'],
-  },
-  {
-    name: 'UrbanEatsDelights.com',
-    desc: 'An educational site dedicated to astronomy, providing resources for amateur astronomers, star maps, and information on celestial events.',
-    url: '/projects/image-10.jpg',
-    tech: ['NextJS', 'ThreeJS'],
-  },
-]
+  // {
+  //   name: "ByteBoosters.io",
+  //   desc: "A tech startup specializing in software development, offering innovative solutions and services for businesses looking to enhance their digital presence.",
+  //   url: "/projects/image-5.jpg",
+  //   tech: ["Figma", "ReactJS", "TailwindCSS", "CSS"],
+  //   link: "https://google.com",
+  // },
+  // {
+  //   name: "GreenLeafGardens.biz",
+  //   desc: "An online store and community hub for gardening enthusiasts, featuring a wide range of plants, gardening tools, and expert advice.",
+  //   url: "/projects/image-6.jpg",
+  //   tech: ["ReactJS", "TailwindCSS", , "CSS", "FramerMotion"],
+  //   link: "https://google.com",
+  // },
+  // {
+  //   name: "PixelPerfectDesigns.info",
+  //   desc: "A graphic design portfolio showcasing the work of a freelance designer, including branding, web design, and illustration projects.",
+  //   url: "/projects/image-7.jpg",
+  //   tech: ["NextJS", "FramerMotion"],
+  //   link: "https://google.com",
+  // },
+  // {
+  //   name: "HarmonyHealthHub.com",
+  //   desc: " A wellness website focused on holistic health, offering articles on nutrition, fitness, mental health, and alternative therapies.",
+  //   url: "/projects/image-8.jpg",
+  //   tech: ["NextJS", "ReactJS", "FramerMotion"],
+  //   link: "https://google.com",
+  // },
+  // {
+  //   name: "StellarSkiesAstronomy.org",
+  //   desc: "An educational site dedicated to astronomy, providing resources for amateur astronomers, star maps, and information on celestial events.",
+  //   url: "/projects/image-9.jpg",
+  //   tech: ["ReactJS", "JavaScript", "ThreeJS"],
+  //   link: "https://google.com",
+  // },
+  // {
+  //   name: "UrbanEatsDelights.com",
+  //   desc: "An educational site dedicated to astronomy, providing resources for amateur astronomers, star maps, and information on celestial events.",
+  //   url: "/projects/image-10.jpg",
+  //   tech: ["NextJS", "ThreeJS"],
+  //   link: "https://google.com",
+  // },
+];
 
 export const projectsButton = [
   'All',
