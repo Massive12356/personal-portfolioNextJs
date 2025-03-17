@@ -281,9 +281,9 @@ import HistoryLineIcon from 'remixicon-react/HistoryLineIcon'
 import BriefcaseLineIcon from 'remixicon-react/BriefcaseLineIcon'
 import UserStarLineIcon from 'remixicon-react/UserStarLineIcon'
 import ProjectorLineIcon from 'remixicon-react/ProjectorLineIcon'
-import PriceTag3LineIcon from 'remixicon-react/PriceTag3LineIcon'
+// import PriceTag3LineIcon from 'remixicon-react/PriceTag3LineIcon'
 import ContactsBook2LineIcon from 'remixicon-react/ContactsBook2LineIcon'
-import QuestionAnswerLineIcon from 'remixicon-react/QuestionAnswerLineIcon'
+// import QuestionAnswerLineIcon from 'remixicon-react/QuestionAnswerLineIcon'
 
 export const navbarData = [
   {
