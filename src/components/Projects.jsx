@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import Heading from "./sub/Heading";
 import Project from "./sub/Project";
 import { projectsButton, projectsData } from "@/Assets";
@@ -11,30 +11,38 @@ const Projects = () => {
   const prevIndex = useRef(0);
   const buttonsRef = useRef([]);
 
-  const handleClick = () => {
-    animate(buttonsRef.current[prevIndex.current], { opacity: 0.5, scale: 1 });
-    animate(buttonsRef.current[index], { opacity: 1, scale: 1.2 });
-  };
+  // ✅ Memoize the handleClick function to prevent re-creation on each render
+  const handleClick = useCallback(() => {
+    if (buttonsRef.current[prevIndex.current]) {
+      animate(buttonsRef.current[prevIndex.current], {
+        opacity: 0.5,
+        scale: 1,
+      });
+    }
+    if (buttonsRef.current[index]) {
+      animate(buttonsRef.current[index], { opacity: 1, scale: 1.2 });
+    }
+  }, [index]);
 
   useEffect(() => {
     handleClick();
     prevIndex.current = index;
-  }, [index]);
+  }, [index, handleClick]);
 
   return (
     <div id="projects" className="w-[100%] min-h-screen py-4">
       <Heading text={"Projects"} />
       <div className="flex flex-wrap items-center justify-around gap-3 py-10">
-        {projectsButton.map((text) => (
+        {projectsButton.map((text, i) => (
           <motion.button
             initial={{
-              opacity: text === projectsButton[0] ? 1 : 0.5,
-              scale: text === projectsButton[0] ? 1.2 : 1,
+              opacity: i === 0 ? 1 : 0.5,
+              scale: i === 0 ? 1.2 : 1,
             }}
             key={text} // ✅ Fixed: Use unique key
-            ref={(el) => buttonsRef.current.push(el)}
+            ref={(el) => (buttonsRef.current[i] = el)} // ✅ Clear and set ref properly
             onClick={() => {
-              setIndex(projectsButton.indexOf(text));
+              setIndex(i);
               setTech(text);
             }}
             className="border border-yellow-500 rounded-xl px-2 py-1 text-sm font-light tracking-wider text-gray-400"
@@ -50,8 +58,6 @@ const Projects = () => {
           )
           .map((data) => (
             <motion.div key={data.id} layout>
-              {" "}
-              {/* ✅ Fixed: Use unique id */}
               <Project data={data} />
             </motion.div>
           ))}

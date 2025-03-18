@@ -1,9 +1,9 @@
-"use client"
-import Heading from "./sub/Heading"
-import Image from "next/image"
-import { reviewsData, starIcons, arrowIcons } from "@/Assets"
-import { useRef, useState, useEffect } from "react"
-import { animate, motion } from "framer-motion"
+"use client";
+import Heading from "./sub/Heading";
+import Image from "next/image";
+import { reviewsData, starIcons, arrowIcons } from "@/Assets";
+import { useRef, useState, useEffect, useCallback } from "react";
+import { animate, motion } from "framer-motion";
 
 const Reviews = () => {
   const [index, setIndex] = useState(0);
@@ -11,7 +11,8 @@ const Reviews = () => {
   const prevIndex = useRef(0);
   const slides = useRef([]);
 
-  const rightClickHandler = () => {
+  // ✅ Wrap in useCallback to prevent recreation on re-renders
+  const rightClickHandler = useCallback(() => {
     animate(
       slides.current[index],
       { x: 0, scale: 1, rotate: 0 },
@@ -22,9 +23,9 @@ const Reviews = () => {
       rotate: index % 2 === 0 ? 10 : -10,
       x: "-100%",
     });
-  };
+  }, [index]);
 
-  const leftClickHandler = () => {
+  const leftClickHandler = useCallback(() => {
     animate(
       slides.current[index],
       { x: 0, scale: 1, rotate: 0 },
@@ -35,15 +36,17 @@ const Reviews = () => {
       scale: 0.4,
       rotate: prevIndex.current % 2 === 0 ? 10 : -10,
     });
-  };
+  }, [index]);
 
+  // ✅ Include all necessary dependencies
   useEffect(() => {
     if (slides.current[index]) {
       direction ? leftClickHandler() : rightClickHandler();
       prevIndex.current = index;
     }
-  }, [index]);
-  // ✅ NEW: Animate the first slide on component mount
+  }, [index, direction, leftClickHandler, rightClickHandler]);
+
+  // ✅ Animate the first slide on component mount
   useEffect(() => {
     if (slides.current[0]) {
       animate(slides.current[0], { x: 0, scale: 1, rotate: 0 });
@@ -113,6 +116,6 @@ const Reviews = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Reviews
+export default Reviews;
