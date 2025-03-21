@@ -1,17 +1,4 @@
-// Hero
-import InstagramLineIcon from 'remixicon-react/InstagramLineIcon'
-import FacebookCircleLineIcon from 'remixicon-react/FacebookCircleLineIcon'
-import DribbbleLineIcon from 'remixicon-react/DribbbleLineIcon'
-import YoutubeLineIcon from 'remixicon-react/YoutubeLineIcon'
-import GithubLineIcon from 'remixicon-react/GithubLineIcon'
 
-export const heroIcons = [
-  <InstagramLineIcon />,
-  <FacebookCircleLineIcon />,
-  <DribbbleLineIcon />,
-  <YoutubeLineIcon />,
-  <GithubLineIcon />,
-]
 
 // AboutMe icons
 import GithubFillIcon from 'remixicon-react/GithubFillIcon'
@@ -253,8 +240,15 @@ import StarHalfLineIcon from 'remixicon-react/StarHalfLineIcon'
 import ArrowLeftSLineIcon from 'remixicon-react/ArrowLeftSLineIcon'
 import ArrowRightSLineIcon from 'remixicon-react/ArrowRightSLineIcon'
 
-export const starIcons = [<StarFillIcon />, <StarHalfLineIcon />]
-export const arrowIcons = [<ArrowLeftSLineIcon />, <ArrowRightSLineIcon />]
+export const starIcons = [
+  <StarFillIcon key="star-fill" />,
+  <StarHalfLineIcon key="star-half" />,
+];
+
+export const arrowIcons = [
+  <ArrowLeftSLineIcon key="arrow-left" />,
+  <ArrowRightSLineIcon key="arrow-right" />,
+];
 
 export const reviewsData = [
 

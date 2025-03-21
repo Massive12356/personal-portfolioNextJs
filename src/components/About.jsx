@@ -37,9 +37,9 @@ const About = () => {
         </div>
       </div>
       <div className="mt-20 w-[100%] flex flex-wrap items-center justify-between gap-x-7 gap-y-10">
-        {aboutData.map((item, i) => (
-          <Achievements key={i} title={item.title} amount={item.amount}>
-            <span key={i}>{item.icon}</span> {/* Fixed: Added key here */}
+        {aboutData.map((item, index) => (
+          <Achievements key={index} title={item.title} amount={item.amount}>
+            <span key={index}>{item.icon}</span> {/* Fixed: Added key here */}
           </Achievements>
         ))}
       </div>

@@ -1,8 +1,10 @@
 "use client";
 import Image from "next/image";
-import { heroIcons } from "@/Assets";
 import { useMotionValue, useTransform, motion, useSpring } from "framer-motion";
 import { useState, useEffect } from "react";
+import InstagramLineIcon from "remixicon-react/InstagramLineIcon";
+import FacebookCircleLineIcon from "remixicon-react/FacebookCircleLineIcon";
+import GithubLineIcon from "remixicon-react/GithubLineIcon";
 
 const Hero = () => {
   const [windowOffset, setWindowOffset] = useState({
@@ -106,16 +108,9 @@ const Hero = () => {
           transition={{ delay: 0.5 }}
           className="mt-8 flex justify-center gap-x-10 text-3xl text-yellow-600 sm:text-2xl"
         >
-          {heroIcons.map((icon, i) => (
-            <a
-              href="#"
-              onClick={(e) => e.preventDefault()}
-              key={i}
-              className="rounded-lg hover:bg-red-400 hover:text-white transition-colors"
-            >
-              {icon}
-            </a>
-          ))}
+          <InstagramLineIcon/>
+          <FacebookCircleLineIcon/>
+          <GithubLineIcon/>
         </motion.div>
 
         {/* CTA Button */}

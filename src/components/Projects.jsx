@@ -39,8 +39,8 @@ const Projects = () => {
               opacity: i === 0 ? 1 : 0.5,
               scale: i === 0 ? 1.2 : 1,
             }}
-            key={text} // ✅ Fixed: Use unique key
-            ref={(el) => (buttonsRef.current[i] = el)} // ✅ Clear and set ref properly
+            key={i} // ✅ Use index as key for tracking changes
+            ref={(el) => (buttonsRef.current[i] = el)} // ✅ Set ref using index
             onClick={() => {
               setIndex(i);
               setTech(text);
@@ -56,8 +56,10 @@ const Projects = () => {
           .filter((project) =>
             project.tech.some((item) => (tech === "All" ? true : item === tech))
           )
-          .map((data) => (
-            <motion.div key={data.id} layout>
+          .map((data, i) => (
+            <motion.div key={i} layout>
+              {" "}
+              {/* ✅ Added index key for tracking */}
               <Project data={data} />
             </motion.div>
           ))}

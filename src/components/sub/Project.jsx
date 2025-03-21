@@ -9,6 +9,7 @@ const Project = ({ data = {}, index }) => {
 
   return (
     <motion.div
+      key={index} // ✅ Added key to track changes
       initial={{
         opacity: 0,
         y: index % 2 === 0 ? 100 : -100,

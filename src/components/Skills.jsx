@@ -30,14 +30,14 @@ const Skills = () => {
       <div className="w-[100%] flex justify-between flex-wrap gap-x-8 md:gap-x-2 gap-y-10 lg:gap-y-6">
         {/* ✅ Safe mapping with optional chaining */}
         {skillsData?.length > 0 ? (
-          skillsData.map((item, i) => (
+          skillsData.map((item, index) => (
             <motion.div
-              custom={i}
+              custom={index}
               variants={variance}
               initial="hidden"
               whileInView="visible"
               whileHover={{ scale: 1.1 }}
-              key={i}
+              key={`skill-${index}`} // ✅ Added unique key
               className="flex items-center justify-center gap-x-3 rounded-xl border border-yellow-500 bg-zinc-200 px-5 py-5 lg:px-2 cursor-pointer"
             >
               <Image

@@ -11,10 +11,10 @@ const Navbar = ({ id }) => {
         </span>
       </a>
       <div className="flex flex-col gap-y-1 xl:gap-y-1 sm:gap-y-2">
-        {navbarData.map((item) => (
+        {navbarData.map((item, index) => (
           <a
             href={`/#${item.id}`}
-            key={item.id}
+            key={`${item.id}-${index}`}
             className="group flex flex-col items-center"
           >
             <span
@@ -30,7 +30,7 @@ const Navbar = ({ id }) => {
               className={`text-[10px] sm:text-[8px] tracking-wide opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 text-center dark:text-white ${
                 item.id === id
                   ? "-translate-x-0 opacity-100"
-                  : item.id % 2 === 0
+                  : index % 2 === 0
                   ? "translate-x-2"
                   : "-translate-x-2"
               }`}

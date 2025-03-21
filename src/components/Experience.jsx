@@ -37,16 +37,16 @@ const Experience = () => {
           className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-full bg-gray-300 origin-top"
         ></motion.div>
 
-        {experienceData.map((data, i) => (
+        {experienceData.map((data, index) => (
           <div
-            key={`id-${i}`}
+            key={`id-${index}`}
             className={`w-full max-w-5xl px-12 sm:px-0 relative flex items-center ${
-              i % 2 === 0 ? "justify-start" : "justify-end"
+              index % 2 === 0 ? "justify-start" : "justify-end"
             }`}
           >
             {/* Experience Card */}
             <motion.div
-              initial={{ opacity: 0, x: i % 2 === 0 ? -80 : 80 }}
+              initial={{ opacity: 0, x: index % 2 === 0 ? -80 : 80 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, type: "spring", stiffness: 50 }}
@@ -66,7 +66,7 @@ const Experience = () => {
                 <ul className="pl-2">
                   {data.experience.map((exp, idx) => (
                     <li
-                      key={`exp-${i}-${idx}`}
+                      key={`exp-${index}-${idx}`}
                       className="my-1 font-extralight"
                     >
                       {exp}
@@ -77,7 +77,7 @@ const Experience = () => {
               {/* Arrow Indicator */}
               <span
                 className={`absolute top-20 lg:hidden ${
-                  i % 2 === 0
+                  index % 2 === 0
                     ? "left-[105%] rotate-0"
                     : "right-[105%] rotate-180"
                 } text-red-500`}
@@ -89,7 +89,7 @@ const Experience = () => {
             {/* Year Indicator */}
             <div
               className={`w-16 h-16 absolute top-20 ${
-                i % 2 === 0 ? "left-[51%]" : "left-[43%]"
+                index % 2 === 0 ? "left-[51%]" : "left-[43%]"
               } border border-gray-300 rounded-full flex items-center justify-center text-red-400 font-light bg-white shadow-md md:hidden sm:hidden`}
             >
               {data.year}

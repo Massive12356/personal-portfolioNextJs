@@ -11,7 +11,6 @@ const Reviews = () => {
   const prevIndex = useRef(0);
   const slides = useRef([]);
 
-  // ✅ Wrap in useCallback to prevent recreation on re-renders
   const rightClickHandler = useCallback(() => {
     animate(
       slides.current[index],
@@ -38,7 +37,6 @@ const Reviews = () => {
     });
   }, [index]);
 
-  // ✅ Include all necessary dependencies
   useEffect(() => {
     if (slides.current[index]) {
       direction ? leftClickHandler() : rightClickHandler();
@@ -46,7 +44,6 @@ const Reviews = () => {
     }
   }, [index, direction, leftClickHandler, rightClickHandler]);
 
-  // ✅ Animate the first slide on component mount
   useEffect(() => {
     if (slides.current[0]) {
       animate(slides.current[0], { x: 0, scale: 1, rotate: 0 });
@@ -76,8 +73,8 @@ const Reviews = () => {
         >
           {reviewsData.map((review, i) => (
             <motion.div
-              initial={{ x: i === 0 ? 0 : "100%" }} // First slide visible by default
-              key={i}
+              initial={{ x: i === 0 ? 0 : "100%" }}
+              key={review.id || i} // ✅ Use a unique identifier if available
               className="absolute inset-0 flex flex-col items-center justify-center gap-y-7 lg:gap-y-4 border border-yellow-500 bg-zinc-100 p-14 lg:p-5 rounded-xl dark:bg-zinc-700 transition-colors"
               ref={(el) => (slides.current[i] = el)}
             >
@@ -99,8 +96,8 @@ const Reviews = () => {
                   {review.stars.reduce((sum, item) => sum + item, 0).toFixed(1)}
                 </span>
                 <div className="flex items-center gap-x-2 text-2xl text-yellow-500">
-                  {review.stars.map((star, i) => (
-                    <span key={i}>
+                  {review.stars.map((star, j) => (
+                    <span key={`${review.id || i}-${j}`}>
                       {star === 1 ? starIcons[0] : starIcons[1]}
                     </span>
                   ))}
