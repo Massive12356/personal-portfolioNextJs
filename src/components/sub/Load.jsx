@@ -7,7 +7,10 @@ const Load = () => {
   const [load, setLoad] = useState(false);
 
   useEffect(() => {
-    setLoad(true);
+    const timeOut = setTimeout(() => {
+      setLoad(true);
+    }, 1500); // Adjust the delay to control how long the loading page is visible
+    return () => clearTimeout(timeOut); // Cleanup to avoid memory leaks
   }, []);
   return (
     <motion.div
