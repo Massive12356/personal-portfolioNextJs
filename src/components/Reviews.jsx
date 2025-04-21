@@ -61,7 +61,7 @@ const Reviews = () => {
   };
 
   return (
-    <div id="reviews" className="my-20">
+    <div id="reviews" className="my-20 pr-7">
       <Heading text={"Reviews"} />
       <div className="flex flex-col items-center justify-center">
         <motion.div

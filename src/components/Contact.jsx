@@ -17,11 +17,11 @@ const Contact = () => {
 
     try {
       const result = await emailjs.sendForm(
-        "service_rwefo7r",
-        "template_ndqdxup",
+        "service_5za6jht",
+        "template_v7upf3q",
         form.current,
         {
-          publicKey: "sDcQ-JqaYlDH1GFLX",
+          publicKey: "06TI82nSkro1UpF8E",
         }
       );
       console.log("SUCCESS!", result);
@@ -36,7 +36,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="h-screen lg:h-auto py-20 lg:py-40">
+    <div id="contact" className="h-screen lg:h-auto pr-5 py-20 lg:py-40">
       <Heading text={"Get in Touch"} />
 
       <div className="w-full h-full my-auto flex lg:flex-col items-center justify-between lg:justify-center gap-x-20 lg:gap-x-0 gap-y-20">

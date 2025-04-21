@@ -8,16 +8,16 @@ const About = () => {
   return (
     <div
       id="about"
-      className="min-h-screen flex flex-col items-center justify-center"
+      className="min-h-screen flex flex-col items-center justify-center pr-7"
     >
       <Heading text={"About Me"} />
       <div className="w-[100%] flex items-center justify-between md:justify-center">
         <Image
-          src={"/about-me.png"}
+          src={"/img2.jpg"}
           alt="About Image"
           width={400}
           height={400}
-          className="w-[250px] lg:w-[200px] md:hidden"
+          className="w-[250px] lg:w-[200px] md:hidden rounded-lg"
         />
         <div className="relative max-w-[650px] rounded-xl bg-zinc-100 text-justify p-5 dark:bg-zinc-700 transition-colors">
           <span className="absolute -left-5 top-20 scale-[2.5] text-zinc-100 md:hidden dark:text-zinc-700 transition-colors">

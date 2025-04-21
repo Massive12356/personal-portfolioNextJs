@@ -51,7 +51,7 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="h-screen grid place-items-center"
+      className="h-screen grid place-items-center pr-7"
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
     >
@@ -72,12 +72,12 @@ const Hero = () => {
             }}
           >
             <Image
-              src={"/person.png"}
+              src={"/img1.jpg"}
               alt="Person Image"
               width={400}
               height={400}
               priority={true}
-              className="h-auto w-[150px]"
+              className="h-auto w-[200px] rounded-full"
             />
             <motion.span
               className="absolute text-3xl font-semibold text-white"
@@ -108,9 +108,9 @@ const Hero = () => {
           transition={{ delay: 0.5 }}
           className="mt-8 flex justify-center gap-x-10 text-3xl text-yellow-600 sm:text-2xl"
         >
-          <InstagramLineIcon/>
-          <FacebookCircleLineIcon/>
-          <GithubLineIcon/>
+          <InstagramLineIcon />
+          <FacebookCircleLineIcon />
+          <GithubLineIcon />
         </motion.div>
 
         {/* CTA Button */}

@@ -30,7 +30,7 @@ const Projects = () => {
   }, [index, handleClick]);
 
   return (
-    <div id="projects" className="w-[100%] min-h-screen py-4">
+    <div id="projects" className="w-[100%] min-h-screen py-4 pr-5">
       <Heading text={"Projects"} />
       <div className="flex flex-wrap items-center justify-around gap-3 py-10">
         {projectsButton.map((text, i) => (

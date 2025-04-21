@@ -27,7 +27,7 @@ const Skills = () => {
     >
       <Heading text={"Skills"} />
 
-      <div className="w-[100%] flex justify-between flex-wrap gap-x-8 md:gap-x-2 gap-y-10 lg:gap-y-6">
+      <div className="w-[100%] flex justify-between flex-wrap gap-x-8 md:gap-x-2 gap-y-10 lg:gap-y-6  pr-7">
         {/* ✅ Safe mapping with optional chaining */}
         {skillsData?.length > 0 ? (
           skillsData.map((item, index) => (

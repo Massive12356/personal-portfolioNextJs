@@ -28,7 +28,7 @@ const Experience = () => {
 
       <div
         ref={containerRef}
-        className="relative flex flex-col items-center justify-center gap-y-10 lg:gap-y-20 py-10 w-full"
+        className="relative flex flex-col items-center justify-center gap-y-10 lg:gap-y-20 py-10 w-full pr-7"
       >
         {/* Vertical Timeline Bar */}
         <motion.div
