@@ -36,7 +36,7 @@ export const downloadIcon = <DownloadLineIcon />
 export const arrowLeftIcon = <ArrowLeftSFillIcon />
 
 export const aboutText =
-  " Hi, I'm Edward, a Junior Frontend Developer... I specialize in building responsive and user-friendly websites using HTML, CSS, JavaScript, and React. I combine strong technical skills with soft skills like teamwork, communication, and problem-solving to create functional and visually appealing interfaces. My focus is on delivering seamless performance and an exceptional user experience."
+  " Hi, I'm Edward, a Junior Frontend Developer... I specialize in building responsive and user-friendly websites using HTML, TailwindCSS, JavaScript,React.js and Next.js. I combine strong technical skills with soft skills like teamwork, communication, and problem-solving to create functional and visually appealing interfaces. My focus is on delivering seamless performance and an exceptional user experience."
 // End of AboutMe icons
 
 // Skills
