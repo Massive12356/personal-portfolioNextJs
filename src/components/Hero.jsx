@@ -2,9 +2,9 @@
 import Image from "next/image";
 import { useMotionValue, useTransform, motion, useSpring } from "framer-motion";
 import { useState, useEffect } from "react";
-import InstagramLineIcon from "remixicon-react/InstagramLineIcon";
 import FacebookCircleLineIcon from "remixicon-react/FacebookCircleLineIcon";
 import GithubLineIcon from "remixicon-react/GithubLineIcon";
+import LinkedinBoxFillIcon from "remixicon-react/LinkedinBoxFillIcon";
 
 const Hero = () => {
   const [windowOffset, setWindowOffset] = useState({
@@ -108,9 +108,29 @@ const Hero = () => {
           transition={{ delay: 0.5 }}
           className="mt-8 flex justify-center gap-x-10 text-3xl text-yellow-600 sm:text-2xl"
         >
-          <InstagramLineIcon />
-          <FacebookCircleLineIcon />
-          <GithubLineIcon />
+          <a
+            href="https://www.linkedin.com/in/edward-mintah-1bb747322/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LinkedinBoxFillIcon />
+          </a>
+
+          <a
+            href="https://github.com/Massive12356"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GithubLineIcon />
+          </a>
+
+          <a
+            href="https://web.facebook.com/edward.mintah.10"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FacebookCircleLineIcon />
+          </a>
         </motion.div>
 
         {/* CTA Button */}

@@ -6,7 +6,7 @@ const Navbar = ({ id }) => {
     <div
       className="fixed sm:top-auto sm:bottom-0 sm:left-0 sm:right-0 sm:w-full sm:h-[60px] sm:flex-row sm:justify-around sm:border-t sm:border-r-0
                     w-[70px] h-full  left-0 top-0 flex flex-col justify-between border-r border-gray-200 px-4 py-3 z-50
-                    xl:py-6 sm:px-2 sm:py-1 sm:bg-white "
+                    xl:py-6 sm:px-2 sm:py-1 sm:bg-white"
     >
       <a href="/#home" className="sm:hidden">
         <span className="text-2xl font-semibold text-red-400">E</span>.
