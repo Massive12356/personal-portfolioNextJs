@@ -167,6 +167,13 @@ export const projectsData = [
     tech: ["ReactJS", "TailwindCSS", "FramerMotion"],
     link: "https://estateproject-navy.vercel.app/",
   },
+  {
+    name: "Library Management App",
+    desc: "A simple system for managing a library's book inventory with features to add, update, and remove books.",
+    url: "/projects/library.png",
+    tech: ["ReactJS", "TailwindCSS", "FramerMotion"],
+    link: "https://library-management-app-eosin.vercel.app/",
+  },
 ];
 
 export const projectsButton = [
