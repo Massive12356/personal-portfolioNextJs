@@ -4,11 +4,11 @@ import { Outfit } from "next/font/google";
 const inter = Outfit({ subsets: ["latin"] });
 
 export const metadata = {
-  title: " PortFolio",
+  title: "Edward Mintah Jr",
   description: "This is my Original portfolio",
 };
 
-const outfit = Outfit({ subsets: ['latin'] });
+const outfit = Outfit({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   return (
