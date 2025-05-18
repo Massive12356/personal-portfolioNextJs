@@ -17,7 +17,7 @@ const About = () => {
           alt="About Image"
           width={400}
           height={400}
-          className="w-[250px] lg:w-[200px] md:hidden rounded-lg"
+          className="w-[250px] lg:w-[200px] md:hidden rounded-lg md:mr-8 mr-5"
         />
         <div className="relative max-w-[650px] rounded-xl bg-zinc-100 text-justify p-5 dark:bg-zinc-700 transition-colors">
           <span className="absolute -left-5 top-20 scale-[2.5] text-zinc-100 md:hidden dark:text-zinc-700 transition-colors">
@@ -27,7 +27,7 @@ const About = () => {
             {aboutText}
           </p>
           <a
-            href="/Cv/EdwardMintah_CV.pdf"
+            href="/Cv/Mintah_CV.pdf"
             download=""
             className="w-max flex items-center gap-x-2 mt-6 rounded-full border border-gray-300 bg-red-400 px-3 py-2 font-light text-white hover:bg-red-500 transition-colors"
           >

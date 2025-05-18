@@ -112,18 +112,18 @@ export const experienceData = [
     year: 2021,
     title: "Internship at LobsterPlus Ghana Limited",
     education:
-      "Internship Training: Focus on specialized areas like  computer Networking and windows server Management",
+      "Internship Training: Gained practical knowledge in web development frameworks, particularly Next.js, and learned about building responsive and user-friendly interfaces.",
     experience: [
-      "Worked with professional network technicians to build a network infrastructure for the LobsterPlus organization, improving overall productivity.",
+      "Designed and developed a product and pricing dashboard using Next.js, enabling staff to efficiently check stock availability and pricing in real-time.",
     ],
   },
   {
     year: 2022,
     title: "National Service at Ghana Broadcasting Corporation",
     education:
-      "Acquired advanced expertise in web development tools, including HTML, CSS, and React, along with proficiency in computer networking and Windows Server management.",
+      "Gained hands-on experience with frontend technologies including HTML, CSS, JavaScript, React.js, and Next.js.",
     experience: [
-      "Contributed to developing a staff performance monitoring system, focusing on responsive design with HTML, CSS, and JavaScript.",
+      "Contributed to developing a staff performance monitoring system, focusing on responsive design with Tailwind Css, JavaScript, React js, Next js and Framer Motion .",
       "Led a team in restructuring the network infrastructure at the GBC IT Support Office.",
     ],
   },
