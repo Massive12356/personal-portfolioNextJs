@@ -1,92 +1,89 @@
-
-
 // AboutMe icons
-import GithubFillIcon from 'remixicon-react/GithubFillIcon'
-import Projector2LineIcon from 'remixicon-react/Projector2LineIcon'
-import GroupLineIcon from 'remixicon-react/GroupLineIcon'
-import AwardFillIcon from 'remixicon-react/AwardFillIcon'
+import GithubFillIcon from "remixicon-react/GithubFillIcon";
+import Projector2LineIcon from "remixicon-react/Projector2LineIcon";
+import GroupLineIcon from "remixicon-react/GroupLineIcon";
+import AwardFillIcon from "remixicon-react/AwardFillIcon";
 
 export const aboutData = [
   {
-    title: 'Github Repos',
+    title: "Github Repos",
     amount: 22,
     icon: <GithubFillIcon />,
   },
   {
-    title: 'Successful Projects',
+    title: "Successful Projects",
     amount: 4,
     icon: <Projector2LineIcon />,
   },
   {
-    title: 'Satisfied clients',
+    title: "Satisfied clients",
     amount: 2,
     icon: <GroupLineIcon />,
   },
   {
-    title: 'Awards and Recognition',
+    title: "Awards and Recognition",
     amount: 3,
     icon: <AwardFillIcon />,
   },
-]
+];
 
-import DownloadLineIcon from 'remixicon-react/DownloadLineIcon'
-import ArrowLeftSFillIcon from 'remixicon-react/ArrowLeftSFillIcon'
+import DownloadLineIcon from "remixicon-react/DownloadLineIcon";
+import ArrowLeftSFillIcon from "remixicon-react/ArrowLeftSFillIcon";
 
-export const downloadIcon = <DownloadLineIcon />
-export const arrowLeftIcon = <ArrowLeftSFillIcon />
+export const downloadIcon = <DownloadLineIcon />;
+export const arrowLeftIcon = <ArrowLeftSFillIcon />;
 
 export const aboutText =
-  " Hi, I'm Edward, a Junior Frontend Developer... I specialize in building responsive and user-friendly websites using HTML, TailwindCSS, JavaScript,React.js and Next.js. I combine strong technical skills with soft skills like teamwork, communication, and problem-solving to create functional and visually appealing interfaces. My focus is on delivering seamless performance and an exceptional user experience."
+  " Hi, I'm Edward, a Junior Frontend Developer... I specialize in building responsive and user-friendly websites using HTML, TailwindCSS, JavaScript,React.js and Next.js. I combine strong technical skills with soft skills like teamwork, communication, and problem-solving to create functional and visually appealing interfaces. My focus is on delivering seamless performance and an exceptional user experience.";
 // End of AboutMe icons
 
 // Skills
 export const skillsData = [
   {
-    name: 'VS Code',
-    icon: '/skills/vscode.png',
+    name: "VS Code",
+    icon: "/skills/vscode.png",
   },
   {
-    name: 'HTML',
-    icon: '/skills/html.png',
+    name: "HTML",
+    icon: "/skills/html.png",
   },
   {
-    name: 'CSS',
-    icon: '/skills/css.png',
+    name: "CSS",
+    icon: "/skills/css.png",
   },
   {
-    name: 'JavaScript',
-    icon: '/skills/js.png',
+    name: "JavaScript",
+    icon: "/skills/js.png",
   },
   {
-    name: 'TailwindCSS',
-    icon: '/skills/tailwind.png',
+    name: "TailwindCSS",
+    icon: "/skills/tailwind.png",
   },
   {
-    name: 'Vite',
-    icon: '/skills/vite.png',
+    name: "Vite",
+    icon: "/skills/vite.png",
   },
   {
-    name: 'ReactJS',
-    icon: '/skills/react.png',
+    name: "ReactJS",
+    icon: "/skills/react.png",
   },
   {
-    name: 'Git',
-    icon: '/skills/Git-Icon.png',
-  },
- {
-    name: 'Framer Motion',
-    icon: '/skills/framer.png',
+    name: "Git",
+    icon: "/skills/Git-Icon.png",
   },
   {
-    name: 'Github',
-    icon: '/skills/github.png',
+    name: "Framer Motion",
+    icon: "/skills/framer.png",
   },
-]
+  {
+    name: "Github",
+    icon: "/skills/github.png",
+  },
+];
 
-import CopyrightLineIcon from 'remixicon-react/CopyrightLineIcon'
+import CopyrightLineIcon from "remixicon-react/CopyrightLineIcon";
 
-
-export const copyRightIcon = <CopyrightLineIcon  />
+export const copyRightIcon = <CopyrightLineIcon />;
 // Experience
 export const experienceData = [
   {
@@ -174,78 +171,81 @@ export const projectsData = [
     tech: ["ReactJS", "TailwindCSS", "FramerMotion"],
     link: "https://library-management-app-eosin.vercel.app/",
   },
+  {
+    name: "Faivich Website",
+    desc: "A website design to showcase products of Faivich brand and connect them to potential buyers.",
+    url: "/projects/Faivich.png",
+    tech: ["ReactJS", "TailwindCSS", "FramerMotion"],
+    link: "https://www.faivich.com/",
+  },
 ];
 
 export const projectsButton = [
-  'All',
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'ReactJS',
-  'TailwindCSS',
-  'FramerMotion',
-]
+  "All",
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "ReactJS",
+  "TailwindCSS",
+  "FramerMotion",
+];
 
-import Home5LineIcon from 'remixicon-react/Home5LineIcon'
-import UserLineIcon from 'remixicon-react/UserLineIcon'
-import HistoryLineIcon from 'remixicon-react/HistoryLineIcon'
-import BriefcaseLineIcon from 'remixicon-react/BriefcaseLineIcon'
-import UserStarLineIcon from 'remixicon-react/UserStarLineIcon'
-import ProjectorLineIcon from 'remixicon-react/ProjectorLineIcon'
-import ContactsBook2LineIcon from 'remixicon-react/ContactsBook2LineIcon'
-
+import Home5LineIcon from "remixicon-react/Home5LineIcon";
+import UserLineIcon from "remixicon-react/UserLineIcon";
+import HistoryLineIcon from "remixicon-react/HistoryLineIcon";
+import BriefcaseLineIcon from "remixicon-react/BriefcaseLineIcon";
+import UserStarLineIcon from "remixicon-react/UserStarLineIcon";
+import ProjectorLineIcon from "remixicon-react/ProjectorLineIcon";
+import ContactsBook2LineIcon from "remixicon-react/ContactsBook2LineIcon";
 
 export const navbarData = [
   {
-    id: 'home',
-    name: 'Home',
+    id: "home",
+    name: "Home",
     icon: <Home5LineIcon />,
   },
   {
-    id: 'about',
-    name: 'About',
+    id: "about",
+    name: "About",
     icon: <UserLineIcon />,
   },
   {
-    id: 'experience',
-    name: 'MyRoad',
+    id: "experience",
+    name: "MyRoad",
     icon: <HistoryLineIcon />,
   },
   {
-    id: 'skills',
-    name: 'Skills',
+    id: "skills",
+    name: "Skills",
     icon: <BriefcaseLineIcon />,
   },
   {
-    id: 'reviews',
-    name: 'Reviews',
+    id: "reviews",
+    name: "Reviews",
     icon: <UserStarLineIcon />,
   },
   {
-    id: 'projects',
-    name: 'Projects',
+    id: "projects",
+    name: "Projects",
     icon: <ProjectorLineIcon />,
   },
-  
+
   {
-    id: 'contact',
-    name: 'Contact',
+    id: "contact",
+    name: "Contact",
     icon: <ContactsBook2LineIcon />,
   },
-  
-]
+];
 
-
-
-import ArrowDropDownLineIcon from 'remixicon-react/ArrowDropDownLineIcon'
-export const QuestionArrow = <ArrowDropDownLineIcon />
+import ArrowDropDownLineIcon from "remixicon-react/ArrowDropDownLineIcon";
+export const QuestionArrow = <ArrowDropDownLineIcon />;
 
 // Reviews
 
-import StarFillIcon from 'remixicon-react/StarFillIcon'
-import StarHalfLineIcon from 'remixicon-react/StarHalfLineIcon'
-import ArrowLeftSLineIcon from 'remixicon-react/ArrowLeftSLineIcon'
-import ArrowRightSLineIcon from 'remixicon-react/ArrowRightSLineIcon'
+import StarFillIcon from "remixicon-react/StarFillIcon";
+import StarHalfLineIcon from "remixicon-react/StarHalfLineIcon";
+import ArrowLeftSLineIcon from "remixicon-react/ArrowLeftSLineIcon";
+import ArrowRightSLineIcon from "remixicon-react/ArrowRightSLineIcon";
 
 export const starIcons = [
   <StarFillIcon key="star-fill" />,
@@ -258,7 +258,6 @@ export const arrowIcons = [
 ];
 
 export const reviewsData = [
-
   {
     image: "/reviews/client-1.png",
     name: "Dennis Obeng, CEO of LobsterPlus Ghana",
@@ -275,15 +274,13 @@ export const reviewsData = [
   },
 ];
 
+import CheckLineIcon from "remixicon-react/CheckLineIcon";
 
-
-import CheckLineIcon from 'remixicon-react/CheckLineIcon'
-
-export const checkIcon = <CheckLineIcon />
+export const checkIcon = <CheckLineIcon />;
 
 // Toggle
-import MoonFoggyFillIcon from 'remixicon-react/MoonFoggyFillIcon'
-import SunFoggyFillIcon from 'remixicon-react/SunFoggyFillIcon'
+import MoonFoggyFillIcon from "remixicon-react/MoonFoggyFillIcon";
+import SunFoggyFillIcon from "remixicon-react/SunFoggyFillIcon";
 
-export const sunIcon = <SunFoggyFillIcon />
-export const moonIcon = <MoonFoggyFillIcon />
+export const sunIcon = <SunFoggyFillIcon />;
+export const moonIcon = <MoonFoggyFillIcon />;
