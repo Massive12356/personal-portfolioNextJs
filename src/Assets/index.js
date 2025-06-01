@@ -4,28 +4,6 @@ import Projector2LineIcon from "remixicon-react/Projector2LineIcon";
 import GroupLineIcon from "remixicon-react/GroupLineIcon";
 import AwardFillIcon from "remixicon-react/AwardFillIcon";
 
-export const aboutData = [
-  {
-    title: "Github Repos",
-    amount: 22,
-    icon: <GithubFillIcon />,
-  },
-  {
-    title: "Successful Projects",
-    amount: 4,
-    icon: <Projector2LineIcon />,
-  },
-  {
-    title: "Satisfied clients",
-    amount: 2,
-    icon: <GroupLineIcon />,
-  },
-  {
-    title: "Awards and Recognition",
-    amount: 3,
-    icon: <AwardFillIcon />,
-  },
-];
 
 import DownloadLineIcon from "remixicon-react/DownloadLineIcon";
 import ArrowLeftSFillIcon from "remixicon-react/ArrowLeftSFillIcon";
@@ -177,6 +155,29 @@ export const projectsData = [
     url: "/projects/Faivich.png",
     tech: ["ReactJS", "TailwindCSS", "FramerMotion"],
     link: "https://www.faivich.com/",
+  },
+];
+
+export const aboutData = [
+  {
+    title: "Github Repos",
+    amount: 22,
+    icon: <GithubFillIcon />,
+  },
+  {
+    title: "Successful Projects",
+    amount: projectsData.length,
+    icon: <Projector2LineIcon />,
+  },
+  {
+    title: "Satisfied clients",
+    amount: 2,
+    icon: <GroupLineIcon />,
+  },
+  {
+    title: "Awards and Recognition",
+    amount: 3,
+    icon: <AwardFillIcon />,
   },
 ];
 
