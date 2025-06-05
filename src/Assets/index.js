@@ -57,6 +57,14 @@ export const skillsData = [
     name: "Github",
     icon: "/skills/github.png",
   },
+  {
+    name: "Zustand",
+    icon: "/skills/zustand.svg"
+  },
+  {
+    name: "NextJs",
+    icon: "/skills/NextJs.svg"
+  }
 ];
 
 import CopyrightLineIcon from "remixicon-react/CopyrightLineIcon";
