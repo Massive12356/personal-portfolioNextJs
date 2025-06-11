@@ -35,7 +35,7 @@ const Project = ({ data = {}, index }) => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: show ? 1 : 0 }}
-        className="absolute top-0 w-full h-full flex flex-col items-center justify-center gap-y-2 bg-white/95 p-6 rounded-lg dark:bg-zinc-700/95 transition-colors"
+        className="absolute top-0 w-full h-full flex flex-col items-center justify-center gap-y-2 bg-white/96 p-6 rounded-lg dark:bg-zinc-700/95 transition-colors"
       >
         {/* ✅ Add fallback for `data.link` */}
         {data.link ? (
