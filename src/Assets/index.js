@@ -187,29 +187,6 @@ export const projectsData = [
   },
 ];
 
-export const aboutData = [
-  {
-    title: "Github Repos",
-    amount: 22,
-    icon: <GithubFillIcon />,
-  },
-  {
-    title: "Successful Projects",
-    amount: projectsData.length,
-    icon: <Projector2LineIcon />,
-  },
-  {
-    title: "Satisfied clients",
-    amount: 2,
-    icon: <GroupLineIcon />,
-  },
-  {
-    title: "Awards and Recognition",
-    amount: 3,
-    icon: <AwardFillIcon />,
-  },
-];
-
 export const projectsButton = [
   "All",
   "HTML",
